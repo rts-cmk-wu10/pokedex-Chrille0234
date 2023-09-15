@@ -1,0 +1,11 @@
+@import url(css/resultAndInfo.css);
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu:wght@400;500&display=swap');
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    text-transform: capitalize;
+}

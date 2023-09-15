@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #ff000073;">
+    
+    <main>
+        <article>
+            <h2>PokeDex</h2>
+            <form class="pokemonSearch">
+                <label>
+                    <span id="notFoundMessage"></span>
+                    <input type="text" id="searchInput" list="pokemonsList">
+                    <datalist id="pokemonsList">
+                        
+                    </datalist>
+                </label>
+                <button type="submit" id="searchButton">Søg</button>
+                <label>
+                    <button type="button" onclick="getPokemons()">alle pokemons igen</button>
+                </label>
+            </form>
+            <div class="switchPageButtons">
+                <a class="switchPageButton" onclick="previousPage()"> Tilbage </a><a class="switchPageButton" onclick="nextPage()"> Frem </a>
+            </div>
+
+            <section class="resultAndInfo">
+                <div class="searchResults">
+                </div>
+                <div class="info">
+                    <ul id="types">
+
+                    </ul>
+                    <ul id="abilities">  </ul>
+                    <div class="pokemonDetails">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/21/16/10/pokemon-5426712_1280.png" alt="placeholder image" id="image">
+                        <h3>Navn: <span id="name">Pikachu</span></h3>
+                        <h3>Styrke: <span id="strength">112</span></h3>
+                        <h3>Vægt: <span id="description">60</span></h3>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
